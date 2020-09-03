@@ -4,11 +4,10 @@ import pandas as pd
 import json
 from log import logger
 
-
+# create fake users profiles
 faker = Faker()
 
 
-# create fake usernames
 
 def generate_random_mobile_phone():
     """
@@ -75,7 +74,7 @@ def export_to_json(usrs):
 def export_to_excel(usrs):
     """
     :param usrs: list of users , [{}, {}, {}]
-    :return: random dataframe for user
+    :return: dataframe for users
     """
     logger.info('Starting exporting to excel')
     users_df = pd.DataFrame(usrs)
