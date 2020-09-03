@@ -64,7 +64,7 @@ def seed():
 
 def export_to_json(usrs):
     """
-    :param usrs: list of users , [{}, {}, {}]
+    :param usrs: list of users , [{}, {}, {}, ...]
     :return:
     """
     logger.info('Starting exporting to json')
