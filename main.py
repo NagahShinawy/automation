@@ -15,7 +15,7 @@ if __name__ == '__main__':
     user.set_user_info(users)
 
     # ############## automation  ###############################
-    is_login = user.create_account()  # create an account an login
+    is_login = user.create_account()  # create an account and login
     if is_login:
         user.choose_blouses_item()  # Select “Blouses” Subcategory in “Women” Category & checkout procedure
         user.proceed_to_checkout_and_payment()  # checkout & confirm
