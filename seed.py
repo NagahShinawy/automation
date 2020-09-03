@@ -82,7 +82,7 @@ def export_to_excel(usrs):
     users_df.index += 1             # start counter from 1
     users_df.index.names = ['No.']  # rename index to 'No.'
     users_df.to_excel('users.xlsx')
-    logger.info('Ending exporting to json')
+    logger.info('Ending exporting to excel')
     return users_df
 
 
