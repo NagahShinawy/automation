@@ -242,10 +242,10 @@ class User:
 
         is_checked = self.automation.driver.find_element_by_css_selector('#uniform-cgv span').get_attribute('class')
         if not is_checked:  # agree
-            logger.info('agree and confirm')
             self.automation.driver.execute_script("document.querySelectorAll('#cgv')[0].click()")
 
         self.automation.driver.find_element_by_css_selector('button[name=processCarrier]').click()
+        logger.info('agree and confirmed')
 
         # pay by bank wire
         logger.info('pay by bank wire')
